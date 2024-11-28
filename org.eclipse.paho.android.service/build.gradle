@@ -12,7 +12,8 @@ ext {
     PROJECT_DESCRIPTION = "修改原有 eclipse paho mqtt android 项目，支持AndroidX,支持 Android 14"
 //项目描述
 }
-apply from: 'publish.gradle'
+//apply from: 'publish.gradle'
+
 android {
     compileSdk rootProject.ext.compileSdkVersion
     namespace rootProject.ext.serviceArchivesBaseName
@@ -50,21 +51,4 @@ dependencies {
     implementation 'androidx.work:work-runtime:2.9.1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-}
-
-
-group='com.github.lucaswu57'
-version ='1.2.1'
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-                groupId 'com.github.lucaswu57'
-                artifactId 'paho.mqtt.android'
-                version '1.2.1'
-                // from components.release
-            }
-        }
-    }
 }
