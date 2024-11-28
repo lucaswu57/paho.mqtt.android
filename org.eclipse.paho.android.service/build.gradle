@@ -2,11 +2,11 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 ext {
     PUBLISH_ARTIFACT_ID = "paho.mqtt.android" //你的artifact_id，一般是module的名字
-    PUBLISH_VERSION = "1.2.0"  //发布版本号
-    PUBLISH_GROUP_ID = 'io.github.mayzs'  //你的sonatype的group_id
-    GITHUB_URL = "https://github.com/mayzs/paho.mqtt.android"//github url
-    GITHUB_CLONE_URL = "https://github.com/mayzs/paho.mqtt.android.git" //github clone url
-    GITHUB_BRANCHE_URL = "https://github.com/mayzs/paho.mqtt.android/tree/master"
+    PUBLISH_VERSION = "1.2.1"  //发布版本号
+    PUBLISH_GROUP_ID = 'io.github.lucaswu57'  //你的sonatype的group_id
+    GITHUB_URL = "https://github.com/lucaswu57/paho.mqtt.android"//github url
+    GITHUB_CLONE_URL = "https://github.com/lucaswu57/paho.mqtt.android.git" //github clone url
+    GITHUB_BRANCHE_URL = "https://github.com/lucaswu57/paho.mqtt.android/tree/master"
     //github branch url
     PROJECT_NAME = "paho.mqtt.android"//项目名称
     PROJECT_DESCRIPTION = "修改原有 eclipse paho mqtt android 项目，支持AndroidX,支持 Android 14"
